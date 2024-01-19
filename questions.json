@@ -2,7 +2,7 @@
     "containerID": "qtree_container",
     "questions": {
         "1": {
-            "question": "Is this a brand-new site or application/tool?",
+            "question": "Is this a brand-new <div class=\"tooltip\">site<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> or <div class=\"tooltipright\">application/tool<span class=\"tooltiptextright\">A website or web tool that has a technical component beyond static text. For instance, a site where a user signs in with a password, or inputs information and sees a result, or an interactive map that has functionality that interacts with the user. Generally, an application is a site we create that helps a user accomplish a task. </span></div>?",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -32,11 +32,17 @@
                     "val": "No: site/application public facing",
                     "classes": "",
                     "nextQ": 3
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 1
                 }
             }
         },
         "3": {
-            "question": "Is this a redesign or large overhaul of an existing EERE <div class=\"tooltip\">site?<span class=\"tooltiptext\">Site: an online page or collection of pages under a single domain</span></div> <br><br><hr>Examples of redesigns or large overhauls of an existing site:<ul> <li> <a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\">Funding Site Redesign</a> </li>",
+            "question": "Is this a redesign or large overhaul of an existing EERE <div class=\"tooltip\">site?<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\">Funding Site Redesign</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -49,11 +55,17 @@
                     "val": "No: a redesign or large overhaul of an existing EERE site",
                     "classes": "",
                     "nextQ": 5
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 1
                 }
             }
         },
         "4": {
-            "question": "Is this a new site or application for an EERE office or area?",
+            "question": "Is this a new <div class=\"tooltip\">site<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> or <div class=\"tooltipright\">application<span class=\"tooltiptextright\">A website or web tool that has a technical component beyond static text. For instance, a site where a user signs in with a password, or inputs information and sees a result, or an interactive map that has functionality that interacts with the user. Generally, an application is a site we create that helps a user accomplish a task. </span></div> for an EERE office or area? <br><br><hr>Example:<ul> <li> <a href=\"https://www.eere.energy.gov/energydataguide\">Energy Data Management Guide</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -66,6 +78,12 @@
                     "val": "No: new site or application for an EERE office or area",
                     "classes": "",
                     "nextQ": 6
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 2
                 }
             }
         },
@@ -83,11 +101,17 @@
                     "val": "No: update to the existing site, such as a few new pages or edits to existing pages",
                     "classes": "",
                     "nextQ": 7
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 3
                 }
             }
         },
         "6": {
-            "question": "Is this a lab project funded by EERE?",
+            "question": "Is this a <div class=\"tooltip\">lab project<span class=\"tooltiptext\">An online site or tool supported by a DOE national lab with funding, personnel, and/or content. </span></div> funded by EERE? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/buildings/stor4build\">Stor4Build</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -100,11 +124,17 @@
                     "val": "No: lab project is funded by EERE",
                     "classes": "",
                     "nextQ": 8
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 4
                 }
             }
         },
         "7": {
-            "question": "Is this a move of an existing site from one host platform to another?",
+            "question": "Is this a move of an existing site from one host platform to another? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/iedo/build4scale\">Build4Scale</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -117,11 +147,17 @@
                     "val": "No: a move of an existing site from one host platform to another",
                     "classes": "",
                     "nextQ": 9
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 5
                 }
             }
         },
         "8": {
-            "question": "Is this a partnership project with external stakeholders?",
+            "question": "Is this a partnership project with external stakeholders? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/energysaver/estimating-appliance-and-home-electronic-energy-use\">Appliance Energy Calculator</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -134,6 +170,12 @@
                     "val": "No: a partnership project with external stakeholders",
                     "classes": "",
                     "nextQ": null
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 6
                 }
             }
         },
@@ -151,11 +193,17 @@
                     "val": "No: a request for a special / marketing URL or redirect for an existing site",
                     "classes": "",
                     "nextQ": 11
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 7
                 }
             }
         },
         "10": {
-            "question": "Does this partnership project have EERE funding?",
+            "question": "Does this partnership project have EERE funding? <br><br><hr>Example:<ul> <li> <a href=\"https://www.hydrogen.energy.gov/interagency\">Hydrogen.gov</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -168,6 +216,12 @@
                     "val": "No: a partnership project with EERE funding",
                     "classes": "",
                     "nextQ": 12
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 8
                 }
             }
         },
@@ -185,11 +239,17 @@
                     "val": "No: a request to change the navigation of an existing site",
                     "classes": "",
                     "nextQ": 13
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 9
                 }
             }
         },
         "12": {
-            "question": "Will the site or tool be located in the DOE web environment?",
+            "question": "Will the site or tool be located in the DOE web environment? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/iedo/superior-energy-performance\">Superior Energy Performance</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -202,11 +262,17 @@
                     "val": "No: site or tool located in the DOE web environment",
                     "classes": "",
                     "nextQ": 11
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 10
                 }
             }
         },
         "13": {
-            "question": "Is this a usability project?",
+            "question": "Is this a usability project? <br><br><hr>Example:<ul> <li> <a href=\"https://www7.eere.energy.gov/wgt/node/comm-standards-usability-study.html\">Communication Standards Usability Study</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -219,11 +285,17 @@
                     "val": "No: a usability project",
                     "classes": "",
                     "nextQ": 15
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 11
                 }
             }
         },
         "14": {
-            "question": "Does this new URL begin with \"Energy.gov/eere/[tech_office]\"?",
+            "question": "Does this new URL begin with \"Energy.gov/eere/[tech_office]\"? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/amo/advanced-manufacturing-office\">Advanced Manufacturing</a> requests of eere.energy.gov/manufacturing and manufacturing.energy.gov</li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -236,11 +308,17 @@
                     "val": "No: new URL begins with \"Energy.gov/eere/[tech_office]\"",
                     "classes": "",
                     "nextQ": null
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 9
                 }
             }
         },
         "15": {
-            "question": "Is this a request for a new nested group in the Energy.gov CMS, or any other request not mentioned?",
+            "question": "Is this a request for a new nested group in the Energy.gov CMS, or any other request not mentioned? <br><br><hr>Example:<ul> <li> <a href=\"https://vizgen.openei.org\">VizGen (Data Visualization Generator) Demo</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -253,6 +331,12 @@
                     "val": "No: a request for a new nested group in the Energy.gov CMS, or any other request not mentioned",
                     "classes": "",
                     "nextQ": null
+                },
+                "back": {
+                    "label": "Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 13
                 }
             }
         }
