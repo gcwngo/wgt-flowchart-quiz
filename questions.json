@@ -379,6 +379,10 @@
             "Yes: a request for a new nested group in the Energy.gov CMS, or any other request not mentioned": {
                 "position": "WGT Review",
                 "content": "Required"
+            },
+            "No: brand-new site or application/tool|Yes: site/application public facing|Yes: a redesign or large overhaul of an existing EERE site|Yes: new site or application for an EERE office or area|": {
+                "position": "WGT Review Required",
+                "content": "<br><br>Please contact the <a href=\"mailto:billie.bates@ee.doe.gov\">WGT facilitator</a>.<br><br>Example project that underwent WGT review: <br><ul> <li><a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\">Funding Site Redesign</a></li>"
             }
         }
     }

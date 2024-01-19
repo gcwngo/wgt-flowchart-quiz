@@ -219,17 +219,22 @@ var questionnaireTree = function(qt) {
                 sAnswersPattern += qt.questions[question].answer + '|';
             }
         }
-
+        console.log(sAnswersPattern,oAnswers.patterns[sAnswersPattern]);
         // Binary question options - only matches and extracts content/position of the last question object
         let regex = /\|([^|]+)\|$/;
         let match = sAnswersPattern.match(regex);
-        if (match && oAnswers.patterns[match[1]] && oAnswers.patterns[match[1]].content) {
+        if (oAnswers.patterns[sAnswersPattern] && oAnswers.patterns[sAnswersPattern].content) {
+            sResultContent = oAnswers.patterns[sAnswersPattern].content;
+            sResultPosition = oAnswers.patterns[sAnswersPattern].position 
+                              ? oAnswers.patterns[sAnswersPattern].position 
+                              : 'unknown';
+        } 
+        else if (match && oAnswers.patterns[match[1]] && oAnswers.patterns[match[1]].content) {
             sResultContent = oAnswers.patterns[match[1]].content;
             sResultPosition = oAnswers.patterns[match[1]].position 
                               ? oAnswers.patterns[match[1]].position 
                               : 'unknown';
         }
-
         /**
          * Enables check for specific and full pattern history for questions with multiple options
         console.log(sAnswersPattern,oAnswers.patterns[sAnswersPattern]);
