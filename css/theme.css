@@ -1,0 +1,103 @@
+body {
+	font-family: Arial;
+}
+.qt-question {
+  padding: 1.5rem 2.5rem;
+  background-color: #007934;
+  color: white;
+  width: 500px;
+  font-weight: bold;
+}
+
+.qt-question.qt-active {
+	display: inline-block;
+}
+
+.qt-question.qt-inactive {
+	display: none;
+}
+
+.qt-option {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 11rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  background-color: white;
+  color: #007934;
+  text-align: center;
+
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin: 20px 5px 5px 5px;
+}
+
+.qt-option:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+#answer-result {
+	padding: 10px;
+  padding: 1.5rem 2.5rem;
+  background-color: #007934;
+  color: white;
+  width: 500px;
+  font-weight: bold;
+}
+
+  /* BUTTONS */
+  .button {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    width: 5rem;
+    text-align: center;
+    border: 0.1rem solid #007934;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #007934;
+    background-color: white;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 121, 52, 1);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+
+  /* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

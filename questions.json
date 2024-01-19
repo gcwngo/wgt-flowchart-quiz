@@ -1,0 +1,301 @@
+{
+    "containerID": "qtree_container",
+    "questions": {
+        "1": {
+            "question": "Is this a brand-new site or application/tool?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: brand-new site or application/tool",
+                    "classes": "",
+                    "nextQ": 2
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: brand-new site or application/tool",
+                    "classes": "",
+                    "nextQ": 3
+                }
+            }
+        },
+        "2": {
+            "question": "Is this site/application public facing?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: site/application public facing",
+                    "classes": "",
+                    "nextQ": 4
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: site/application public facing",
+                    "classes": "",
+                    "nextQ": 3
+                }
+            }
+        },
+        "3": {
+            "question": "Is this a redesign or large overhaul of an existing EERE <div class=\"tooltip\">site?<span class=\"tooltiptext\">Site: an online page or collection of pages under a single domain</span></div> <br><br><hr>Examples of redesigns or large overhauls of an existing site:<ul> <li> <a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\">Funding Site Redesign</a> </li>",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: a redesign or large overhaul of an existing EERE site",
+                    "classes": "",
+                    "nextQ": 2
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: a redesign or large overhaul of an existing EERE site",
+                    "classes": "",
+                    "nextQ": 5
+                }
+            }
+        },
+        "4": {
+            "question": "Is this a new site or application for an EERE office or area?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: new site or application for an EERE office or area",
+                    "classes": "",
+                    "nextQ": null
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: new site or application for an EERE office or area",
+                    "classes": "",
+                    "nextQ": 6
+                }
+            }
+        },
+        "5": {
+            "question": "Is this an update to the existing site, such as a few new pages or edits to existing pages?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: update to the existing site, such as a few new pages or edits to existing pages",
+                    "classes": "yellow-bus",
+                    "nextQ": null
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: update to the existing site, such as a few new pages or edits to existing pages",
+                    "classes": "",
+                    "nextQ": 7
+                }
+            }
+        },
+        "6": {
+            "question": "Is this a lab project funded by EERE?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: lab project is funded by EERE",
+                    "classes": "",
+                    "nextQ": null
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: lab project is funded by EERE",
+                    "classes": "",
+                    "nextQ": 8
+                }
+            }
+        },
+        "7": {
+            "question": "Is this a move of an existing site from one host platform to another?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: a move of an existing site from one host platform to another",
+                    "classes": "",
+                    "nextQ": 6
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: a move of an existing site from one host platform to another",
+                    "classes": "",
+                    "nextQ": 9
+                }
+            }
+        },
+        "8": {
+            "question": "Is this a partnership project with external stakeholders?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: a partnership project with external stakeholders",
+                    "classes": "",
+                    "nextQ": 10
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: a partnership project with external stakeholders",
+                    "classes": "",
+                    "nextQ": null
+                }
+            }
+        },
+        "9": {
+            "question": "Is this a request for a special / marketing URL or redirect for an existing site?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: a request for a special / marketing URL or redirect for an existing site",
+                    "classes": "",
+                    "nextQ": 14
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: a request for a special / marketing URL or redirect for an existing site",
+                    "classes": "",
+                    "nextQ": 11
+                }
+            }
+        },
+        "10": {
+            "question": "Does this partnership project have EERE funding?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: a partnership project with EERE funding",
+                    "classes": "",
+                    "nextQ": null
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: a partnership project with EERE funding",
+                    "classes": "",
+                    "nextQ": 12
+                }
+            }
+        },
+        "11": {
+            "question": "Is this a request to change the navigation of an existing site?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: a request to change the navigation of an existing site",
+                    "classes": "",
+                    "nextQ": null
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: a request to change the navigation of an existing site",
+                    "classes": "",
+                    "nextQ": 13
+                }
+            }
+        },
+        "12": {
+            "question": "Will the site or tool be located in the DOE web environment?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: site or tool located in the DOE web environment",
+                    "classes": "",
+                    "nextQ": null
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: site or tool located in the DOE web environment",
+                    "classes": "",
+                    "nextQ": 11
+                }
+            }
+        },
+        "13": {
+            "question": "Is this a usability project?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: a usability project",
+                    "classes": "",
+                    "nextQ": 14
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: a usability project",
+                    "classes": "",
+                    "nextQ": 15
+                }
+            }
+        },
+        "14": {
+            "question": "Does this new URL begin with \"Energy.gov/eere/[tech_office]\"?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: new URL begins with \"Energy.gov/eere/[tech_office]\"",
+                    "classes": "",
+                    "nextQ": 15
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: new URL begins with \"Energy.gov/eere/[tech_office]\"",
+                    "classes": "",
+                    "nextQ": null
+                }
+            }
+        },
+        "15": {
+            "question": "Is this a request for a new nested group in the Energy.gov CMS, or any other request not mentioned?",
+            "options": {
+                "yes": {
+                    "label": "Yes",
+                    "val": "Yes: a request for a new nested group in the Energy.gov CMS, or any other request not mentioned",
+                    "classes": "",
+                    "nextQ": null
+                },
+                "no": {
+                    "label": "No",
+                    "val": "No: a request for a new nested group in the Energy.gov CMS, or any other request not mentioned",
+                    "classes": "",
+                    "nextQ": null
+                }
+            }
+        }
+
+    },
+    "answers": {
+        "patterns": {
+            "Yes: new site or application for an EERE office or area": {
+                "position": "WGT Review",
+                "content": "Required"
+            },
+            "Yes: lab project is funded by EERE": {
+                "position": "WGT Review",
+                "content": "Required"
+            },
+            "No: a partnership project with external stakeholders": {
+                "position": "WGT Review",
+                "content": "Required"
+            },
+            "Yes: a partnership project with EERE funding": {
+                "position": "WGT Review",
+                "content": "Required"
+            },
+            "Yes: site or tool located in the DOE web environment": {
+                "position": "WGT Review",
+                "content": "Required"
+            },
+            "Yes: update to the existing site, such as a few new pages or edits to existing pages": {
+                "position": "WGT Review",
+                "content": "Not Required"
+            },
+            "Yes: a request to change the navigation of an existing site": {
+                "position": "WGT Review",
+                "content": "Not Required"
+            },
+            "No: a request for a new nested group in the Energy.gov CMS, or any other request not mentioned": {
+                "position": "WGT Review",
+                "content": "Not Required"
+            },
+            "Yes: a request for a new nested group in the Energy.gov CMS, or any other request not mentioned": {
+                "position": "WGT Review",
+                "content": "Required"
+            }
+        }
+    }
+}
