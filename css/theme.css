@@ -165,8 +165,10 @@ body {
 
 .link-style {
   color:#0074a1;
+  text-decoration: none;
 }
-.link-style:hover{
+
+.link-style:hover {
   text-decoration: underline;
 }
 
