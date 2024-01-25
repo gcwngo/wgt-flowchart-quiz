@@ -10,7 +10,7 @@ h3 {
 }
 
 body {
-	font-family: Arial;
+	font-family: 'Karla', sans-serif;
   background: rgb(105,190,40);
   background: linear-gradient(90deg, rgba(105,190,40,1) 0%, rgba(0,121,52,1) 60%);
 }
