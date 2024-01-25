@@ -382,7 +382,7 @@
             },
             "No: brand-new site or application/tool|Yes: site/application public facing|Yes: a redesign or large overhaul of an existing EERE site|Yes: new site or application for an EERE office or area|": {
                 "position": "WGT Review Required",
-                "content": "<br><br>Please contact the <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link\">WGT facilitator</a>.<br><br>Example project that underwent WGT review: <br><ul> <li><a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\" class=\"link\">Funding Site Redesign</a></li>"
+                "content": "<br><br>Please contact the <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">WGT facilitator</a>.<br><br>Example project that underwent WGT review: <br><ul> <li><a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\" class=\"link-style\">Funding Site Redesign</a></li>"
             }
         }
     }
