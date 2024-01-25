@@ -42,7 +42,7 @@
             }
         },
         "3": {
-            "question": "Is this a redesign or large overhaul of an existing EERE <div class=\"tooltip\">site?<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\">Funding Site Redesign</a> </li>",
+            "question": "Is this a redesign or large overhaul of an existing EERE <div class=\"tooltip\">site?<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\" class=\"link-style\">Funding Site Redesign</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -65,7 +65,7 @@
             }
         },
         "4": {
-            "question": "Is this a new <div class=\"tooltip\">site<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> or <div class=\"tooltipright\">application<span class=\"tooltiptextright\">A website or web tool that has a technical component beyond static text. For instance, a site where a user signs in with a password, or inputs information and sees a result, or an interactive map that has functionality that interacts with the user. Generally, an application is a site we create that helps a user accomplish a task. </span></div> for an EERE office or area? <br><br><hr>Example:<ul> <li> <a href=\"https://www.eere.energy.gov/energydataguide\">Energy Data Management Guide</a> </li>",
+            "question": "Is this a new <div class=\"tooltip\">site<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> or <div class=\"tooltipright\">application<span class=\"tooltiptextright\">A website or web tool that has a technical component beyond static text. For instance, a site where a user signs in with a password, or inputs information and sees a result, or an interactive map that has functionality that interacts with the user. Generally, an application is a site we create that helps a user accomplish a task. </span></div> for an EERE office or area? <br><br><hr>Example:<ul> <li> <a href=\"https://www.eere.energy.gov/energydataguide\" class=\"link-style\">Energy Data Management Guide</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -111,7 +111,7 @@
             }
         },
         "6": {
-            "question": "Is this a <div class=\"tooltip\">lab project<span class=\"tooltiptext\">An online site or tool supported by a DOE national lab with funding, personnel, and/or content. </span></div> funded by EERE? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/buildings/stor4build\">Stor4Build</a> </li>",
+            "question": "Is this a <div class=\"tooltip\">lab project<span class=\"tooltiptext\">An online site or tool supported by a DOE national lab with funding, personnel, and/or content. </span></div> funded by EERE? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/buildings/stor4build\" class=\"link-style\">Stor4Build</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -134,7 +134,7 @@
             }
         },
         "7": {
-            "question": "Is this a move of an existing site from one host platform to another? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/iedo/build4scale\">Build4Scale</a> </li>",
+            "question": "Is this a move of an existing site from one host platform to another? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/iedo/build4scale\" class=\"link-style\">Build4Scale</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -157,7 +157,7 @@
             }
         },
         "8": {
-            "question": "Is this a partnership project with external stakeholders? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/energysaver/estimating-appliance-and-home-electronic-energy-use\">Appliance Energy Calculator</a> </li>",
+            "question": "Is this a partnership project with external stakeholders? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/energysaver/estimating-appliance-and-home-electronic-energy-use\" class=\"link-style\">Appliance Energy Calculator</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -203,7 +203,7 @@
             }
         },
         "10": {
-            "question": "Does this partnership project have EERE funding? <br><br><hr>Example:<ul> <li> <a href=\"https://www.hydrogen.energy.gov/interagency\">Hydrogen.gov</a> </li>",
+            "question": "Does this partnership project have EERE funding? <br><br><hr>Example:<ul> <li> <a href=\"https://www.hydrogen.energy.gov/interagency\" class=\"link-style\">Hydrogen.gov</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -249,7 +249,7 @@
             }
         },
         "12": {
-            "question": "Will the site or tool be located in the DOE web environment? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/iedo/superior-energy-performance\">Superior Energy Performance</a> </li>",
+            "question": "Will the site or tool be located in the DOE web environment? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/iedo/superior-energy-performance\" class=\"link-style\">Superior Energy Performance</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -272,7 +272,7 @@
             }
         },
         "13": {
-            "question": "Is this a usability project? <br><br><hr>Example:<ul> <li> <a href=\"https://www7.eere.energy.gov/wgt/node/comm-standards-usability-study.html\">Communication Standards Usability Study</a> </li>",
+            "question": "Is this a usability project? <br><br><hr>Example:<ul> <li> <a href=\"https://www7.eere.energy.gov/wgt/node/comm-standards-usability-study.html\" class=\"link-style\">Communication Standards Usability Study</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -295,7 +295,7 @@
             }
         },
         "14": {
-            "question": "Does this new URL begin with \"Energy.gov/eere/[tech_office]\"? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/amo/advanced-manufacturing-office\">Advanced Manufacturing</a> requests of eere.energy.gov/manufacturing and manufacturing.energy.gov</li>",
+            "question": "Does this new URL begin with \"Energy.gov/eere/[tech_office]\"? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/amo/advanced-manufacturing-office\" class=\"link-style\">Advanced Manufacturing</a> requests of eere.energy.gov/manufacturing and manufacturing.energy.gov</li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -318,7 +318,7 @@
             }
         },
         "15": {
-            "question": "Is this a request for a new nested group in the Energy.gov CMS, or any other request not mentioned? <br><br><hr>Example:<ul> <li> <a href=\"https://vizgen.openei.org\">VizGen (Data Visualization Generator) Demo</a> </li>",
+            "question": "Is this a request for a new nested group in the Energy.gov CMS, or any other request not mentioned? <br><br><hr>Example:<ul> <li> <a href=\"https://vizgen.openei.org\" class=\"link-style\">VizGen (Data Visualization Generator) Demo</a> </li>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -382,7 +382,7 @@
             },
             "No: brand-new site or application/tool|Yes: site/application public facing|Yes: a redesign or large overhaul of an existing EERE site|Yes: new site or application for an EERE office or area|": {
                 "position": "WGT Review Required",
-                "content": "<br><br>Please contact the <a href=\"mailto:billie.bates@ee.doe.gov\">WGT facilitator</a>.<br><br>Example project that underwent WGT review: <br><ul> <li><a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\">Funding Site Redesign</a></li>"
+                "content": "<br><br>Please contact the <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link\">WGT facilitator</a>.<br><br>Example project that underwent WGT review: <br><ul> <li><a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\" class=\"link\">Funding Site Redesign</a></li>"
             }
         }
     }

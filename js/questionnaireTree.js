@@ -119,8 +119,16 @@ var questionnaireTree = function(qt) {
                 elParent: elContainer,
                 newTag:   questionTag,
                 newElID:  questionTagID,
-                sHTML:    questionTxt,
-                elClasses: questionClasses
+                elClasses: questionClasses            
+            });
+
+            // Create and append the 'question-displaybox' div that holds customized question text
+            _appendChild({
+                elParent: questionEl, 
+                newTag: 'div', 
+                newElID: 'question-displaybox',
+                elClasses: 'qt-displaybox',
+                sHTML: questionTxt
             });
 
             for(var optName in oOptions) {
