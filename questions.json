@@ -2,7 +2,7 @@
     "containerID": "qtree_container",
     "questions": {
         "1": {
-            "question": "Is this a brand-new <div class=\"tooltip\">site<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> or <div class=\"tooltipright\">application/tool<span class=\"tooltiptextright\">A website or web tool that has a technical component beyond static text. For instance, a site where a user signs in with a password, or inputs information and sees a result, or an interactive map that has functionality that interacts with the user. Generally, an application is a site we create that helps a user accomplish a task. </span></div>?",
+            "question": "<b>Is this a brand-new site or application/tool?</b><br><br><b><u>Terms</u>:</b><br><b>Site</b>: An online page or collection of related pages under a single domain name.<br><b>Application</b>: A website or web tool that has a technical component beyond static text. For instance, a site where a user signs in with a password, or inputs information and sees a result, or an interactive map that has functionality that interacts with the user. Generally, an application is a site we create that helps a user accomplish a task.",
             "options": {
                 "yes": {
                     "label": "Yes",
