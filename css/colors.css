@@ -1,50 +1,35 @@
-
-/*
-	Colors Demo Stylesheet
-	
-	This stylesheet is for customizing the styling for various questions, options, and answers specific to the colors demo. It is meant to demonstrate the flexibility of working with Flowquest to create a custom flowchart questionarire. Simply pass in your classes in the configuration file you use when instantiating Flowquest...
-
-	"questions": {
-		1: {
-			"question": "What is your favorite color hue?",
-			"options": {
-				"red": {
-					"label": "Red",
-					"val": "red",
-					"classes": "hue-red",
-					"nextQ": 2
-				},
-				"green": {
-					"label": "Green",
-					"val": "green",
-					"classes": "hue-green",
-					"nextQ": 7
-				},
-				"blue": {
-					"label": "Blue",
-					"val": "blue",
-					"classes": "hue-blue",
-					"nextQ": 13
-				},
-				"yellow": {
-					"label": "Yellow",
-					"val": "yellow",
-					"classes": "hue-yellow",
-					"nextQ": 16
-				}
-			}
-		}
- */
-
-
-
 /**
  * Specific Options Classes
  */
 .back {
 	background: white;
 	color: #000;
-	font-size: 1rem;
+	font-size: 25px;
+	position: absolute;
+	left: 30px;
+	top: 30%;
+
+	align-items: center;
+	background-color: #87939b;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	padding: 20px 40px;
+	color: #000000;
+	font-family: "Poppins-Bold", sans-serif;
+	font-style: normal;
+	font-size: 25px;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 0px;
+	margin: auto;
+	margin-top: 0%;
+	opacity: 0.6;
+	white-space: nowrap;
+	width: 60px;
+	height: 35px;
+	text-align: center;
+	text-transform: none;
+	cursor: pointer;
+	transition: 0.3s all ease-in-out;
 }
-
-

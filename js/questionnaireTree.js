@@ -1,7 +1,7 @@
 /**
  *  questionnaireTree: a flowchart questionnaire and survey tool for creating questions from structured JSON data objects in a specified pattern.
  */
-var questionnaireTree = function(qt) {
+var questionnaireTree = function (qt) {
     /**
      * local reference to top level questions object
      * @type {object}
@@ -37,18 +37,18 @@ var questionnaireTree = function(qt) {
          * @type {Object}
          */
         , oReferences = {
-            QTag                : 'div'
-            , QTagPrefix        : 'qt-question-'
-            , QTagBaseClass     : 'qt-question'
-            , QTagActiveClass   : 'qt-active'
-            , QTagInactiveClass : 'qt-inactive'
-            , OptTag            : 'a'
-            , OptPrefix         : 'option-'
-            , OptClass          : 'qt-option'
-            , OptLblData        : 'data-answer'
-            , OptValData        : 'data-val'
-            , ATag              : 'div'
-            , ATagId            : 'answer-result'
+            QTag: 'div'
+            , QTagPrefix: 'qt-question-'
+            , QTagBaseClass: 'qt-question'
+            , QTagActiveClass: 'qt-active'
+            , QTagInactiveClass: 'qt-inactive'
+            , OptTag: 'a'
+            , OptPrefix: 'option-'
+            , OptClass: 'qt-option'
+            , OptLblData: 'data-answer'
+            , OptValData: 'data-val'
+            , ATag: 'div'
+            , ATagId: 'answer-result'
         }
         /**
          * start questionnaireTree processing
@@ -60,10 +60,10 @@ var questionnaireTree = function(qt) {
             _buildQuestion(currentQueston);
 
             if (bUsePushState) {
-                window.addEventListener('popstate', function(e) {
-                    var 
+                window.addEventListener('popstate', function (e) {
+                    var
                         oQuestion = e.state
-                    ;
+                        ;
                     // e.state is equal to the data-attribute of the last image we clicked
                     console.log(oQuestion);
                     _buildQuestion(oQuestion.qid);
@@ -79,15 +79,15 @@ var questionnaireTree = function(qt) {
          * @property    {string} url    the url of the new page adding to history
          * @return {void}
          */
-        , _newPageQuestion = function(qid, data) {
-            var 
+        , _newPageQuestion = function (qid, data) {
+            var
                 title = data.question
                 , url = title.replace(' ', '-')
                 , oQuestion = {
                     qid: qid,
                     data: data
                 }
-            ;
+                ;
 
             history.pushState(oQuestion, title, url);
         }
@@ -95,7 +95,7 @@ var questionnaireTree = function(qt) {
          * build a question
          * @param  {number}     qid     the question number to build
          * @return {void}               nothing 
-         */ 
+         */
         , _buildQuestion = function (qid) {
             // questions
             var thisQ = oQuestions[qid]
@@ -103,7 +103,7 @@ var questionnaireTree = function(qt) {
                 , questionTagID = oReferences.QTagPrefix + qid
                 , questionClasses = oReferences.QTagBaseClass + ' ' + oReferences.QTagActiveClass
                 , questionTxt = qid + '. ' + thisQ.question + '<br>'
-                
+
                 // answer options
                 , newOptTag = oReferences.OptTag
                 , newOptElPrefix = oReferences.OptPrefix
@@ -113,31 +113,58 @@ var questionnaireTree = function(qt) {
                 , i = 0
                 , oOptions = thisQ['options']
                 , sCustomOptionClasses
-            ;
-            
+                ;
+
             var questionEl = _appendChild({
                 elParent: elContainer,
-                newTag:   questionTag,
-                newElID:  questionTagID,
-                elClasses: questionClasses            
+                newTag: questionTag,
+                newElID: questionTagID,
+                elClasses: questionClasses
+            });
+
+            // Append the EERE tricolor bar to the question display box
+            _appendChild({
+                elParent: questionEl, // Assuming the tricolor bar should be inside questionEl but adjust as needed
+                newTag: 'div',
+                newElID: 'tricolor-bar',
+                elClasses: 'tricolor-bar'
+            });
+
+            // Append the default WGT text above the question
+            _appendChild({
+                elParent: questionEl, // Use the questionEl as the parent element
+                newTag: 'div',
+                newElID: 'header-text',
+                elClasses: 'header-text-class', // Add a class for styling
+                sHTML: '<div style="text-align:center;">Does Your New Web Project Need WGT Review?</div>'
             });
 
             // Create and append the 'question-displaybox' div that holds customized question text
             _appendChild({
-                elParent: questionEl, 
-                newTag: 'div', 
+                elParent: questionEl,
+                newTag: 'div',
                 newElID: 'question-displaybox',
                 elClasses: 'qt-displaybox',
                 sHTML: questionTxt
             });
 
-            for(var optName in oOptions) {
+            // Add options under 'options-displaybox' div that holds selectable options and navigation
+            var optionsDisplayBox = _appendChild({
+                elParent: questionEl,
+                newTag: 'div',
+                newElID: 'options-displaybox',
+                elClasses: 'qt-options-displaybox',
+            });
+
+            createResetButton(optionsDisplayBox);
+
+            for (var optName in oOptions) {
                 // if there are custom classes used in options...
                 sOptionClasses = oOptions[optName].classes || '';
 
                 // add options
                 _appendChild({
-                    elParent: questionEl,
+                    elParent: optionsDisplayBox,
                     newTag: newOptTag,
                     newElID: questionTagID + '-' + newOptElPrefix + optName,
                     elClasses: newOptElClasses + ' ' + sOptionClasses,
@@ -151,15 +178,15 @@ var questionnaireTree = function(qt) {
 
             // if push state setting is turned on, add question as a page to browser's history
             if (bUsePushState) {
-                _newPageQuestion(qid,thisQ);
+                _newPageQuestion(qid, thisQ);
             }
         }
-        , _init = function() {
+        , _init = function () {
             elContainer = _getEl(sContainer);
             _start();
         }()
-    ;
-    
+        ;
+
     /**
      * Answer selection callback
      * @this        {DOMElement}    The DOM element of the answer
@@ -170,7 +197,7 @@ var questionnaireTree = function(qt) {
     function _recordAnswer() {
         var answerVal = _getAttr(this, oReferences.OptLblData) // @todo centralize this to remove duplication
             , dataVal = _getAttr(this, oReferences.OptValData)
-        ;
+            ;
 
         // add answer to current question
         qt.questions[currentQueston].answer = answerVal;
@@ -186,8 +213,8 @@ var questionnaireTree = function(qt) {
      * @return  {void}          nothing
      */
     function _nextQuestion(thisQ, thisAnswerData) {
-        // hide the whole question, not just the current answer selection
-        _hideEl(thisQ.parentNode);
+        // hide the whole question, not just the current answer selection, call parent of the question-option displaybox which is the parentEl
+        _hideEl(thisQ.parentNode.parentNode);
 
         var thisAnswerString = thisQ.innerHTML;
 
@@ -196,16 +223,16 @@ var questionnaireTree = function(qt) {
         if (!qt.questions[currentQueston]['options'][thisAnswerData].nextQ) {
             return _endAllQuestions();
         }
-        
+
         var nextQuestion = qt.questions[currentQueston]['options'][thisAnswerData].nextQ
             , bMoreQuestions = qt.questions[nextQuestion] ? true : false
-        ;
+            ;
 
         // if more questions are available, build the next question 
         if (bMoreQuestions) {
             _buildQuestion(nextQuestion);
             currentQueston = nextQuestion;
-        // if no more questions are available, finish questionnaireTree
+            // if no more questions are available, finish questionnaireTree
         } else {
             _endAllQuestions();
         }
@@ -220,28 +247,28 @@ var questionnaireTree = function(qt) {
             , sResultContent
             , sResultPosition
             , sClasses
-        ;
+            ;
 
         for (question in qt.questions) {
             if (qt.questions[question].answer) {
                 sAnswersPattern += qt.questions[question].answer + '|';
             }
         }
-        console.log(sAnswersPattern,oAnswers.patterns[sAnswersPattern]);
+        console.log(sAnswersPattern, oAnswers.patterns[sAnswersPattern]);
         // Binary question options - only matches and extracts content/position of the last question object
         let regex = /\|([^|]+)\|$/;
         let match = sAnswersPattern.match(regex);
         if (oAnswers.patterns[sAnswersPattern] && oAnswers.patterns[sAnswersPattern].content) {
             sResultContent = oAnswers.patterns[sAnswersPattern].content;
-            sResultPosition = oAnswers.patterns[sAnswersPattern].position 
-                              ? oAnswers.patterns[sAnswersPattern].position 
-                              : 'unknown';
-        } 
+            sResultPosition = oAnswers.patterns[sAnswersPattern].position
+                ? oAnswers.patterns[sAnswersPattern].position
+                : 'unknown';
+        }
         else if (match && oAnswers.patterns[match[1]] && oAnswers.patterns[match[1]].content) {
             sResultContent = oAnswers.patterns[match[1]].content;
-            sResultPosition = oAnswers.patterns[match[1]].position 
-                              ? oAnswers.patterns[match[1]].position 
-                              : 'unknown';
+            sResultPosition = oAnswers.patterns[match[1]].position
+                ? oAnswers.patterns[match[1]].position
+                : 'unknown';
         }
         /**
          * Enables check for specific and full pattern history for questions with multiple options
@@ -258,30 +285,72 @@ var questionnaireTree = function(qt) {
             sResultPosition = 'unknown';
         }
 
-        console.log('questionnaireTree finished! Results:');
+        //console.log('questionnaireTree finished! Results:');
         //For questions with multiple options:
         //console.log(sAnswersPattern);
-        
+
         //For binary questions:
         console.log(match[1]);
-        console.log(sResultPosition,sResultContent);
+        console.log(sResultPosition, sResultContent);
 
         // if there are custom classes used in answer...
         //sClasses = oAnswers.patterns[sAnswersPattern].classes || '';
         sClasses = oAnswers.patterns[match[1]].classes || '';
 
         // add answer to DOM
+        // var questionEl = _appendChild({
+        //     elParent: elContainer,
+        //     newTag: oReferences.ATag,
+        //     newElID: oReferences.ATagId,
+        //     elClasses: sClasses,
+        //     sHTML: sResultPosition + ': ' + sResultContent
+        // });
+
         var questionEl = _appendChild({
-            elParent:  elContainer,
-            newTag:    oReferences.ATag,
-            newElID:   oReferences.ATagId,
-            elClasses: sClasses,
-            sHTML:     sResultPosition + ': ' + sResultContent
+            elParent: elContainer,
+            newTag: 'div',
+            newElID: 'final-answer',
+            elClasses: 'qt-question',
+            sHTML: sResultPosition + ': ' + sResultContent
+        });
+
+        // Append the EERE tricolor bar to the question display box
+        _appendChild({
+            elParent: questionEl, // Assuming the tricolor bar should be inside questionEl but adjust as needed
+            newTag: 'div',
+            newElID: 'tricolor-bar',
+            elClasses: 'tricolor-bar'
+        });
+
+        // Append the default WGT text above the question
+        _appendChild({
+            elParent: questionEl, // Use the questionEl as the parent element
+            newTag: 'div',
+            newElID: 'header-text',
+            elClasses: 'header-text-class', // Add a class for styling
+            sHTML: '<div style="text-align:center;">Does Your New Web Project Need WGT Review?</div>'
+        });
+
+        // Create and append the 'question-displaybox' div that holds customized question text
+        _appendChild({
+            elParent: questionEl,
+            newTag: 'div',
+            newElID: 'question-displaybox',
+            elClasses: 'qt-displaybox',
+            sHTML: 'TEST'
+        });
+
+        // Add options under 'options-displaybox' div that holds selectable options and navigation
+        var optionsDisplayBox = _appendChild({
+            elParent: questionEl,
+            newTag: 'div',
+            newElID: 'options-displaybox',
+            elClasses: 'qt-options-displaybox',
         });
     }
 
     // DOM stuff
-    
+
     /**
      * Get attribute value
      */
@@ -304,7 +373,7 @@ var questionnaireTree = function(qt) {
         }
         return el;
     }
-    
+
     /**
      * Get element
      * @param   {string}        sel     the selector string
@@ -328,15 +397,15 @@ var questionnaireTree = function(qt) {
      * @property    {string}        args.sText          the text to be added to the DOM node 
      * @return      {DOMElement}                        the newly created DOM element 
      */
-    function _appendChild (args) {
-        var elParent       = args.elParent
-            , newTag       = args.newTag
-            , newElID      = args.newElID
-            , newEl        = document.createElement(newTag)
+    function _appendChild(args) {
+        var elParent = args.elParent
+            , newTag = args.newTag
+            , newElID = args.newElID
+            , newEl = document.createElement(newTag)
             , newElClasses = args.elClasses
-            , newElAttr    = args.attribs || null
+            , newElAttr = args.attribs || null
             , i = 0
-        ;
+            ;
 
         newEl.id = newElID;
 
@@ -355,7 +424,7 @@ var questionnaireTree = function(qt) {
         if (newElAttr) {
             var newAttr
                 , newElAttrLen = newElAttr.length
-            ;
+                ;
 
             for (; i < newElAttrLen; i++) {
                 newAttr = document.createAttribute(newElAttr[i].aName);
@@ -365,8 +434,19 @@ var questionnaireTree = function(qt) {
         }
 
         elParent.appendChild(newEl);
-        
+
         return newEl;
+    }
+
+    function createResetButton(optionsDisplayBox) {
+        if (!optionsDisplayBox.querySelector('.reset-button')) {
+            var resetBtn = document.createElement('button');
+            resetBtn.innerHTML = '↺ Reset';
+            resetBtn.classList.add('button', 'reset-button'); // Add a specific class for styling or identifying the reset button
+            resetBtn.onclick = function() { window.location.reload(); };
+            optionsDisplayBox.appendChild(resetBtn);
+            optionsDisplayBox.style.position = 'relative'; // To support absolute positioning of the reset button
+        }
     }
 
 };
