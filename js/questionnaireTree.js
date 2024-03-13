@@ -448,7 +448,7 @@ var questionnaireTree = function (qt) {
     function createResetButton(optionsDisplayBox) {
         if (!optionsDisplayBox.querySelector('.reset-button')) {
             var resetBtn = document.createElement('button');
-            resetBtn.innerHTML = '↺ Reset';
+            resetBtn.innerHTML = '&#8634; Reset';
             resetBtn.classList.add('button', 'reset-button'); // Add a specific class for styling or identifying the reset button
             resetBtn.onclick = function() { window.location.reload(); };
             optionsDisplayBox.appendChild(resetBtn);
