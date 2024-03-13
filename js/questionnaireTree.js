@@ -102,7 +102,7 @@ var questionnaireTree = function (qt) {
                 , questionTag = oReferences.QTag
                 , questionTagID = oReferences.QTagPrefix + qid
                 , questionClasses = oReferences.QTagBaseClass + ' ' + oReferences.QTagActiveClass
-                , questionTxt = qid + '. ' + thisQ.question + '<br>'
+                , questionTxt = thisQ.question + '<br>'
 
                 // answer options
                 , newOptTag = oReferences.OptTag
@@ -221,7 +221,11 @@ var questionnaireTree = function (qt) {
         console.log(qt.questions[currentQueston]['options'][thisAnswerData]);
 
         if (!qt.questions[currentQueston]['options'][thisAnswerData].nextQ) {
-            return _endAllQuestions();
+            //return _endAllQuestions();
+            //console.log("Questionnaire Completed!")
+            //return function() { window.location.reload(); };;
+            //location.reload();
+
         }
 
         var nextQuestion = qt.questions[currentQueston]['options'][thisAnswerData].nextQ
@@ -234,7 +238,10 @@ var questionnaireTree = function (qt) {
             currentQueston = nextQuestion;
             // if no more questions are available, finish questionnaireTree
         } else {
-            _endAllQuestions();
+            //_endAllQuestions();
+            //console.log("Questionnaire Completed!")
+            //location.reload();
+
         }
     }
 

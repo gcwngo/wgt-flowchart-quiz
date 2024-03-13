@@ -2,7 +2,7 @@
     "containerID": "qtree_container",
     "questions": {
         "1": {
-            "question": "<b>Is this a brand-new site or application/tool?</b><br><br><b><u>Terms</u>:</b><br><b>Site</b>: An online page or collection of related pages under a single domain name.<br><b>Application</b>: A website or web tool that has a technical component beyond static text. For instance, a site where a user signs in with a password, or inputs information and sees a result, or an interactive map that has functionality that interacts with the user. Generally, an application is a site we create that helps a user accomplish a task.",
+            "question": "<b>Is this a brand-new site or application/tool?</b><br><br><p style=\"font-size: xx-large\"><b><u>Terms</u>:</b><br><b>Site</b>: An online page or collection of related pages under a single domain name.<br><br><b>Application</b>: A website or web tool that has a technical component beyond static text. For instance, a site where a user signs in with a password, or inputs information and sees a result, or an interactive map that has functionality that interacts with the user. Generally, an application is a site we create that helps a user accomplish a task.</p>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -19,7 +19,7 @@
             }
         },
         "2": {
-            "question": "Is this site/application public facing?",
+            "question": "<b>Is this site/application public facing?</b>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -31,10 +31,10 @@
                     "label": "No",
                     "val": "No: site/application public facing",
                     "classes": "",
-                    "nextQ": 3
+                    "nextQ": 16
                 },
                 "back": {
-                    "label": "<i class=\"fa-solid fa-caret-left fa-lg\" style=\"color: #163b54;\"></i> Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 1
@@ -42,13 +42,13 @@
             }
         },
         "3": {
-            "question": "Is this a redesign or large overhaul of an existing EERE <div class=\"tooltip\">site?<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/funding/eere-funding-opportunities\" class=\"link-style\">Funding Site Redesign</a> </li>",
+            "question": "<b>Is this a redesign or large overhaul of an existing EERE site?</br>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: a redesign or large overhaul of an existing EERE site",
                     "classes": "",
-                    "nextQ": 2
+                    "nextQ": 23
                 },
                 "no": {
                     "label": "No",
@@ -57,7 +57,7 @@
                     "nextQ": 5
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 1
@@ -65,13 +65,13 @@
             }
         },
         "4": {
-            "question": "Is this a new <div class=\"tooltip\">site<span class=\"tooltiptext\">an online page or collection of pages under a single domain</span></div> or <div class=\"tooltipright\">application<span class=\"tooltiptextright\">A website or web tool that has a technical component beyond static text. For instance, a site where a user signs in with a password, or inputs information and sees a result, or an interactive map that has functionality that interacts with the user. Generally, an application is a site we create that helps a user accomplish a task. </span></div> for an EERE office or area? <br><br><hr>Example:<ul> <li> <a href=\"https://www.eere.energy.gov/energydataguide\" class=\"link-style\">Energy Data Management Guide</a> </li>",
+            "question": "<b>Is this new site or application for an EERE office or area?</b>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: new site or application for an EERE office or area",
                     "classes": "",
-                    "nextQ": null
+                    "nextQ": 24
                 },
                 "no": {
                     "label": "No",
@@ -80,7 +80,7 @@
                     "nextQ": 6
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 2
@@ -88,13 +88,13 @@
             }
         },
         "5": {
-            "question": "Is this an update to the existing site, such as a few new pages or edits to existing pages?",
+            "question": "<b>Is this an update to the existing site, such as a few new pages <br>or edits to existing pages?</b>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: update to the existing site, such as a few new pages or edits to existing pages",
-                    "classes": "yellow-bus",
-                    "nextQ": null
+                    "classes": "",
+                    "nextQ": 17
                 },
                 "no": {
                     "label": "No",
@@ -103,7 +103,7 @@
                     "nextQ": 7
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 3
@@ -111,13 +111,13 @@
             }
         },
         "6": {
-            "question": "Is this a <div class=\"tooltip\">lab project<span class=\"tooltiptext\">An online site or tool supported by a DOE national lab with funding, personnel, and/or content. </span></div> funded by EERE? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/buildings/stor4build\" class=\"link-style\">Stor4Build</a> </li>",
+            "question": "<b>Is this a lab project funded by EERE?</b><br><br><p style=\"font-size: xx-large\"><b><u>Terms</u>:</b><br><b>Lab project</b>: An online site or tool supported by a DOE national lab with funding, personnel, and/or content.</p>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: lab project is funded by EERE",
                     "classes": "",
-                    "nextQ": null
+                    "nextQ": 25
                 },
                 "no": {
                     "label": "No",
@@ -126,7 +126,7 @@
                     "nextQ": 8
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 4
@@ -134,13 +134,13 @@
             }
         },
         "7": {
-            "question": "Is this a move of an existing site from one host platform to another? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/iedo/build4scale\" class=\"link-style\">Build4Scale</a> </li>",
+            "question": "<b>Is this a move of an existing site from one host platform to another?</b><br><br><p style=\"font-size: xx-large\"><b><u>Terms</u>:</b><br><b>Host platform</b>: The network server or system where a website is hosted.<br>Examples: The Energy.gov Drupal content management system (CMS), the EERE Centralized Web Hosting Environment (ECWHE), the hosting environments of labs such as NREL or PNNL.</p>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: a move of an existing site from one host platform to another",
                     "classes": "",
-                    "nextQ": 6
+                    "nextQ": 26
                 },
                 "no": {
                     "label": "No",
@@ -149,7 +149,7 @@
                     "nextQ": 9
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 5
@@ -157,7 +157,7 @@
             }
         },
         "8": {
-            "question": "Is this a partnership project with external stakeholders? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/energysaver/estimating-appliance-and-home-electronic-energy-use\" class=\"link-style\">Appliance Energy Calculator</a> </li>",
+            "question": "<b>Is this a partnership project with external stakeholders?</b><br><br><p style=\"font-size: xx-large\"><b><u>Terms</u>:</b><br><b>Partnership project</b>: A project where DOE collaborates with an outside organization(s), such as other government agencies, nonprofit groups, local groups, businesses, etc. Often, the logos of the other partners will appear on the website, and the partner may provide funding to the effort.</p>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -169,10 +169,10 @@
                     "label": "No",
                     "val": "No: a partnership project with external stakeholders",
                     "classes": "",
-                    "nextQ": null
+                    "nextQ": 27
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 6
@@ -180,7 +180,7 @@
             }
         },
         "9": {
-            "question": "Is this a request for a special / marketing URL or redirect for an existing site?",
+            "question": "<b>Is this a request for a special/marketing URL or redirect for an existing site?</b><br><br><p style=\"font-size: xx-large\"><b><u>Terms</u>:</b><br><b>Marketing URL</b>: A web address used in marketing materials.<br>Example: <a href=\"https://www.energy.gov/eere/buildings/building-technologies-office\" class=\"link-style\">buildings.energy.gov</a>, as printed in a BTO fact sheet<br><br><b>Redirect</b>: A URL or web address that is set up to take the user from one web page to another. Often a redirect is set up if a page or site has been deleted, so that the user will be directed to the new site. Sometimes a redirect is set up for a marketing URL. For instance, the <a href=\"https://www.energy.gov/eere/buildings/building-technologies-office\" class=\"link-style\">buildings.energy.gov</a> marketing URL used in outreach materials is a redirect that takes the user to <a href=\"https://www.energy.gov/eere/buildings/building-technologies-office\" class=\"link-style\">https://www.energy.gov/eere/buildings/building-technologies-office</a>.</p>",
             "options": {
                 "yes": {
                     "label": "Yes",
@@ -195,7 +195,7 @@
                     "nextQ": 11
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 7
@@ -203,13 +203,13 @@
             }
         },
         "10": {
-            "question": "Does this partnership project have EERE funding? <br><br><hr>Example:<ul> <li> <a href=\"https://www.hydrogen.energy.gov/interagency\" class=\"link-style\">Hydrogen.gov</a> </li>",
+            "question": "<b>Does this partnership project have EERE funding?</b><br><br><p style=\"font-size: xx-large\"><a href=\"https://www.energy.gov/eere/communicationstandards/partnership-website-projects\" class=\"link-style\">More info</a></p>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: a partnership project with EERE funding",
                     "classes": "",
-                    "nextQ": null
+                    "nextQ": 28
                 },
                 "no": {
                     "label": "No",
@@ -218,7 +218,7 @@
                     "nextQ": 12
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 8
@@ -226,13 +226,13 @@
             }
         },
         "11": {
-            "question": "Is this a request to change the navigation of an existing site?",
+            "question": "<b>Is this a request to change the navigation of an existing site?</b><br><br><p style=\"font-size: xx-large\"><b><u>Terms</u>:</b><br><b>Navigation</b>: The sections or structure of a site, as indicated by the clickable labels that lead to them, <br>such as “About or “Contact”.<br><br><a href=\"https://www.energy.gov/eere/communicationstandards/website-navigation-labels-and-approval\" class=\"link-style\">More info</a></p>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: a request to change the navigation of an existing site",
                     "classes": "",
-                    "nextQ": null
+                    "nextQ": 19
                 },
                 "no": {
                     "label": "No",
@@ -241,7 +241,7 @@
                     "nextQ": 13
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 9
@@ -249,22 +249,22 @@
             }
         },
         "12": {
-            "question": "Will the site or tool be located in the DOE web environment? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/iedo/superior-energy-performance\" class=\"link-style\">Superior Energy Performance</a> </li>",
+            "question": "<b>Will the site or tool be located in the DOE web environment?</b>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: site or tool located in the DOE web environment",
                     "classes": "",
-                    "nextQ": null
+                    "nextQ": 29
                 },
                 "no": {
                     "label": "No",
                     "val": "No: site or tool located in the DOE web environment",
                     "classes": "",
-                    "nextQ": 11
+                    "nextQ": 20
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 10
@@ -272,13 +272,13 @@
             }
         },
         "13": {
-            "question": "Is this a usability project? <br><br><hr>Example:<ul> <li> <a href=\"https://www7.eere.energy.gov/wgt/node/comm-standards-usability-study.html\" class=\"link-style\">Communication Standards Usability Study</a> </li>",
+            "question": "<b>Is this a usability project?</b><br><br><p style=\"font-size: xx-large\"><a href=\"https://www.energy.gov/eere/communicationstandards/user-experience-research-and-statistics-web\" class=\"link-style\">More info</a></p>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: a usability project",
                     "classes": "",
-                    "nextQ": 14
+                    "nextQ": 30
                 },
                 "no": {
                     "label": "No",
@@ -287,7 +287,7 @@
                     "nextQ": 15
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 11
@@ -295,22 +295,22 @@
             }
         },
         "14": {
-            "question": "Does this new URL begin with \"Energy.gov/eere/[tech_office]\"? <br><br><hr>Example:<ul> <li> <a href=\"https://www.energy.gov/eere/amo/advanced-manufacturing-office\" class=\"link-style\">Advanced Manufacturing</a> requests of eere.energy.gov/manufacturing and manufacturing.energy.gov</li>",
+            "question": "<b>Does this new URL begin with \"Energy.gov/eere/[tech_office]\"?</b><br><br><p style=\"font-size: xx-large\"><a href=\"https://www.energy.gov/eere/communicationstandards/eere-web-domains-urls-and-redirects\" class=\"link-style\">More info</a></p>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: new URL begins with \"Energy.gov/eere/[tech_office]\"",
                     "classes": "",
-                    "nextQ": 15
+                    "nextQ": 21
                 },
                 "no": {
                     "label": "No",
                     "val": "No: new URL begins with \"Energy.gov/eere/[tech_office]\"",
                     "classes": "",
-                    "nextQ": null
+                    "nextQ": 31
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 9
@@ -318,25 +318,212 @@
             }
         },
         "15": {
-            "question": "Is this a request for a new nested group in the Energy.gov CMS, or any other request not mentioned? <br><br><hr>Example:<ul> <li> <a href=\"https://vizgen.openei.org\" class=\"link-style\">VizGen (Data Visualization Generator) Demo</a> </li>",
+            "question": "<b>Is this a request for a new nested group in the Energy.gov CMS, <br>or any other request not mentioned?</b><br><br><p style=\"font-size: xx-large\"><b><u>Terms</u>:</b><br><b>Nested group</b>: A section in the Drupal content management system that denotes a separate area of the DOE family of sites.<br>Examples: EERE has a separate nested group in the Energy.gov CMS, as indicated by the /eere/ in the site’s URLs, and each of the tech offices has its own nested group, denoted by the /eere/xxx/ in the site URLs.</p>",
             "options": {
                 "yes": {
                     "label": "Yes",
                     "val": "Yes: a request for a new nested group in the Energy.gov CMS, or any other request not mentioned",
                     "classes": "",
-                    "nextQ": null
+                    "nextQ": 32
                 },
                 "no": {
                     "label": "No",
                     "val": "No: a request for a new nested group in the Energy.gov CMS, or any other request not mentioned",
                     "classes": "",
-                    "nextQ": null
+                    "nextQ": 22
                 },
                 "back": {
-                    "label": "Back",
+                    "label": "← Back",
                     "val": "",
                     "classes": "back",
                     "nextQ": 13
+                }
+            }
+        },
+        "16": {
+            "question": "<b>No, your project does NOT require WGT review.</b><br><p style=\"font-size: xx-large\">You'll find additional guidance our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.</p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 2
+                }
+            }
+        },
+        "17": {
+            "question": "<b>No, your project does NOT require WGT review.</b><br><p style=\"font-size: xx-large\">You'll find additional guidance our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.</p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 5
+                }
+            }
+        },
+        "18": {
+            "question": "<b>No, your project does NOT require WGT review.</b><br><p style=\"font-size: xx-large\">You'll find additional guidance our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.</p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 7
+                }
+            }
+        },
+        "19": {
+            "question": "<b>No, your project does NOT require WGT review.</b><br><p style=\"font-size: xx-large\">You'll find additional guidance our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.</p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 11
+                }
+            }
+        },
+        "20": {
+            "question": "<b>No, your project does NOT require WGT review.</b><br><p style=\"font-size: xx-large\">You'll find additional guidance our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.</p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 12
+                }
+            }
+        },
+        "21": {
+            "question": "<b>No, your project does NOT require WGT review.</b><br><p style=\"font-size: xx-large\">You'll find additional guidance our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.</p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 14
+                }
+            }
+        },
+        "22": {
+            "question": "<b>No, your project does NOT require WGT review.</b><br><p style=\"font-size: xx-large\">You'll find additional guidance our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.</p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 15
+                }
+            }
+        },
+        "23": {
+            "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review: <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/Funding%20Site%20Redesign.doc\" class=\"link-style\">Funding Site Redesign</a><br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 3
+                }
+            }
+        },
+        "24": {
+                "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review: <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/Energy%20Data%20Management%20Guide.doc\" class=\"link-style\">Energy Data Management Guide</a><br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",
+                "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 4
+                }
+            }
+        },
+        "25": {
+            "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review: <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/Clean%20Energy%20to%20Communities%20Program.doc\" class=\"link-style\">Clean Energy to Communities Program</a><br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 6
+                }
+            }
+        },
+        "26": {
+            "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review:<br><a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/Biomass%20Research%20and%20Development%20Board%20%28BRDi%29%20Move.docx\" class=\"link-style\">Biomass Research and Development Board (BRDi) Move</a><br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",                
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 7
+                }
+            }
+        },
+        "27": {
+            "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review: <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/Appliance%20Energy%20Calculator.doc\" class=\"link-style\">Appliance Energy Calculator</a><br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 8
+                }
+            }
+        },
+        "28": {
+            "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review:<br><a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/ITP%20Advanced%20Manufacturing%20Partnership%20%28AMP%29.docx\" class=\"link-style\">ITP Advanced Manufacturing Partnership</a> (AMP) (2011)<br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 10
+                }
+            }
+        },
+        "29": {
+            "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review: <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/Superior%20Energy%20Performance%20Site.docx\" class=\"link-style\">Superior Energy Performance</a><br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 12
+                }
+            }
+        },
+        "30": {
+            "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review:<br><a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/Communication%20Standards%20Usability%20Study.docx\" class=\"link-style\">Communication Standards Usability Study</a><br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 13
+                }
+            }
+        },
+        "31": {
+            "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review:<br><a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/Advanced%20Manufacturing%20Office%20URL%20Requests.docx\" class=\"link-style\">Advanced Manufacturing Office URL Requests</a><br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 14
+                }
+            }
+        },
+        "32": {
+            "question": "<b>Yes, your project requires WGT review.</b><br><p style=\"font-size: xx-large\"><b>Contact <a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a> to schedule a WGT Meeting (10 a.m. Eastern / 8 a.m. Mountain on Thursdays)</b><br><br>You'll find additional guidance in our <a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/WGT%20FAQs%201-31-24.pdf\" class=\"link-style\">FAQs</a> and on our <a href=\"https://www.energy.gov/eere/communicationstandards/web-governance-roles-and-responsibilities\" class=\"link-style\">EERE Communication Standards site</a>.<br>You can also contact <a href=\"allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a> for questions on your project charter or details.<br><br>Here's an example of a similar project that went through WGT review:<br><a href=\"https://eere-intranet2.ee.doe.gov/sites/default/files/documents/VizGen.doc\" class=\"link-style\">VizGen (Data Visualization Generator / Engine, a.k.a. Enhanced Visualization Tool) Demo</a><br><br>EERE Web Governance Team<br></p><p style=\"font-size: x-large\"><a href=\"mailto:christina.stowers@ee.doe.gov\" class=\"link-style\">Christina Stowers</a>, EERE web enterprise manager<br><a href=\"mailto:allison.hartfiel@nrel.gov\" class=\"link-style\">Allison Hartfiel</a>, web template coordinator / communications liason<br><a href=\"mailto:karl.chan@ee.doe.gov\" class=\"link-style\">Karl Chan</a>, tech lead / admin for ECWHE<br><a href=\"mailto:billie.bates@ee.doe.gov\" class=\"link-style\">Billie Bates</a>, WGT project manager / facilitator<br><a href=\"mailto:shaida.beklik@ee.doe.gov\" class=\"link-style\">Shaida Beklik</a>, cyber security rep<br><a href=\"mailto:rowena.clemente@ee.doe.gov\" class=\"link-style\">Rowena Clemente</a>, cyber security rep<br><a href=\"mailto:brian.szabelski@nrel.gov\" class=\"link-style\">Brian Szabelski</a>, EERE Communications Standards site editor<br><a href=\"mailto:alexander.clayborne@ee.doe.gov\" class=\"link-style\">Alex Clayborne</a>, technical manager / AFS program manager<br><a href=\"mailto:david.crouch@ee.doe.gov\" class=\"link-style\">David Crouch</a>, ad hoc member for budget<br></p>",
+            "options": {
+                "back": {
+                    "label": "← Back",
+                    "val": "",
+                    "classes": "back",
+                    "nextQ": 15
                 }
             }
         }
