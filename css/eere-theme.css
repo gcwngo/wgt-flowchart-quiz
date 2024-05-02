@@ -17,11 +17,21 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #ffffff;
 }
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .qt-displaybox {
   padding: 36px;
   background: #F7F5F5;
-  height: 721px;
+  min-height: 300px;
   color: black;
   border-radius: 0x;
   color: #000;
@@ -32,7 +42,7 @@ body {
 .qt-question {
   background-color: white;
   color: black;
-  width: 1652px;
+  width: 95%;
 
   border: 0px solid transparent;
   border-color: #dddddd;
@@ -90,8 +100,8 @@ body {
   justify-content: center;
   padding: 20px 40px;
   color: #000000;
-  font-family: "Poppins-Bold", sans-serif;
-  font-style: bold;
+  /*font-family: "Poppins-Bold", sans-serif;
+  font-style: bold;*/
   font-size: 50px;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -247,7 +257,7 @@ body {
   height: 220px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   flex-wrap: wrap;
   gap: 36px;
 }
@@ -264,7 +274,7 @@ body {
   border-radius: 25px;
 	background-color: #87939b;
 	display: flex;
-  font-family: "Poppins-Bold", sans-serif;
+  /*font-family: "Poppins-Bold", sans-serif;*/
 	justify-content: center;
 	padding: 20px 40px;
 	color: #000000;
@@ -283,4 +293,7 @@ body {
   opacity: 1;
   color: white;
   background-color: #163b54;
+}
+.back {
+	font-family:initial;
 }

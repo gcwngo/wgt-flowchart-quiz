@@ -153,7 +153,7 @@ var questionnaireTree = function (qt) {
                 elParent: questionEl,
                 newTag: 'div',
                 newElID: 'options-displaybox',
-                elClasses: 'qt-options-displaybox',
+                elClasses: 'qt-options-displaybox .poppins-bold',
             });
 
             createResetButton(optionsDisplayBox);
@@ -449,7 +449,7 @@ var questionnaireTree = function (qt) {
         if (!optionsDisplayBox.querySelector('.reset-button')) {
             var resetBtn = document.createElement('button');
             resetBtn.innerHTML = '&#8634; Reset';
-            resetBtn.classList.add('button', 'reset-button'); // Add a specific class for styling or identifying the reset button
+            resetBtn.classList.add('button', 'reset-button', 'poppins-regular'); // Add a specific class for styling or identifying the reset button
             resetBtn.onclick = function() { window.location.reload(); };
             optionsDisplayBox.appendChild(resetBtn);
             optionsDisplayBox.style.position = 'relative'; // To support absolute positioning of the reset button
